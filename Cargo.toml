@@ -1,0 +1,17 @@
+[package]
+name = "fcm_test"
+version = "0.1.0"
+authors = ["Dustin Bensing <dustin.bensing@navitas.de>"]
+
+[dependencies]
+argparse = "0.2.1"
+tokio = "0.1"
+serde_derive = "1.0"
+serde = "1.0"
+serde_json = "1.0"
+fcm = "0.4"
+futures = "0.1"
+openssl-sys = { version = "0.9.35", feature = ["vendored"] }
+
+[features]
+vendored = ["openssl-sys/vendored"]
